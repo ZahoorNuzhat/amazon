@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simple E-commerce Demo</title>
+</head>
+<body>
+    <header>
+        <h1>Simple E-commerce Demo</h1>
+    </header>
+    
+    <section id="products">
+        <!-- Product Listing -->
+        <div class="product">
+            <img src="product1.jpg" alt="Product 1">
+            <h2>Product 1</h2>
+            <p>Description of Product 1.</p>
+            <button class="add-to-cart" onclick="addToCart('Product 1', 19.99)">Add to Cart</button>
+        </div>
+
+        <!-- Repeat the above structure for additional products -->
+
+    </section>
+
+    <section id="cart">
+        <!-- Shopping Cart -->
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
