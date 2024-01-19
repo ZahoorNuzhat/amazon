@@ -11,7 +11,7 @@ header {
     padding: 10px;
 }
 
-#products, #cart {
+#products, #cart, #add-product {
     max-width: 800px;
     margin: 20px auto;
 }
@@ -31,7 +31,7 @@ header {
 }
 
 #cart {
-    float: right;
+    text-align: center;
 }
 
 #cart-items {
@@ -42,4 +42,3 @@ header {
 #cart-items li {
     margin-bottom: 10px;
 }
-
