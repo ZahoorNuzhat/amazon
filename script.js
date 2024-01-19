@@ -21,11 +21,6 @@ function addNewProduct(event) {
     }
 }
 
-function clearForm() {
-    document.getElementById('productName').value = '';
-    document.getElementById('productPrice').value = '';
-}
-
 function updateCart() {
     const cartItemsElement = document.getElementById('cart-items');
     const cartTotalElement = document.getElementById('cart-total');
