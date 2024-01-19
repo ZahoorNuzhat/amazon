@@ -7,6 +7,25 @@ function addToCart(productName, price) {
     updateCart();
 }
 
+function addNewProduct(event) {
+    event.preventDefault();
+
+    const productName = document.getElementById('productName').value;
+    const productPrice = parseFloat(document.getElementById('productPrice').value);
+
+    if (productName && !isNaN(productPrice)) {
+        addToCart(productName, productPrice);
+        clearForm();
+    } else {
+        alert('Please enter valid product information.');
+    }
+}
+
+function clearForm() {
+    document.getElementById('productName').value = '';
+    document.getElementById('productPrice').value = '';
+}
+
 function updateCart() {
     const cartItemsElement = document.getElementById('cart-items');
     const cartTotalElement = document.getElementById('cart-total');
